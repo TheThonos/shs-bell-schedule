@@ -1,0 +1,21 @@
+body {
+  background-color: #222;
+  color: white;
+  font: 20px Arial;
+  display: inline-flex;
+}
+
+.current-period {
+  font-weight: bold;
+}
+
+.times-wrapper {
+  display: grid;
+  grid-template-columns: 160px 30px 200px;
+  column-gap: 0px;
+  position: relative;
+}
+
+.times-wrapper * {
+  margin: 8px;
+}
