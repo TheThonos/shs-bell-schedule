@@ -1,4 +1,5 @@
 import Time from './Time';
+import Selector from './Selector';
 
 export default function TimeWrapper({
   start,
@@ -11,6 +12,7 @@ export default function TimeWrapper({
 
   return (
     <div className={isCurrent && 'current-period'} style={{ gridRow: row, gridColumn: col }}>
+      <Selector/>
       <Time start={start} end={end} onClick={onClick} />
     </div>
   );

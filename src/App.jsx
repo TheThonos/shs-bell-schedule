@@ -32,6 +32,13 @@ function App() {
     />
   ));
 
+  // let [timerStarted, setTimerStarted] = useState(false);
+
+  // if(!timerStarted){
+  //   setTimerStarted(true);
+  //   setTimer(0);
+  // }
+
   return (
     <div className="app">
       <div className="times-wrapper">
@@ -81,5 +88,11 @@ function getTimeIndex(times, exclusive) {
     }
   }
 }
+
+// function setTimer(i) {
+//   let now = new Date();
+//   document.title = `Num: ${i}`;
+//   setTimeout(() => setTimer(i + 1), (60 - now.getSeconds()) * 1000 + (1000 - now.getMilliseconds()));
+// }
 
 export default App;
